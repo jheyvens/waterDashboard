@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History - Smart Aquarium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #a2d4f4, #d6f0ff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #045f8c;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .history-table {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🐠 AquaMonitor</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon bg-light p-1 rounded"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="alerts.html">Alerts</a></li>
+        <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h2 class="mb-4">📜 Monitoring History</h2>
+
+  <div class="history-table table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Date/Time</th>
+          <th>pH</th>
+          <th>Temp</th>
+          <th>O₂</th>
+          <th>Ammonia</th>
+          <th>Nitrite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>April 26, 2025 - 10:00 AM</td>
+          <td>7.2</td>
+          <td>26°C</td>
+          <td>6.5 mg/L</td>
+          <td>0.25 ppm</td>
+          <td>0.1 ppm</td>
+        </tr>
+        <tr>
+          <td>April 26, 2025 - 9:00 AM</td>
+          <td>7.1</td>
+          <td>25.8°C</td>
+          <td>6.7 mg/L</td>
+          <td>0.20 ppm</td>
+          <td>0.08 ppm</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
